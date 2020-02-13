@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>API_KEY_URL</key>
+	<string>?apikey=ab204a40de52dc326a6a493df4878a72</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -20,6 +22,19 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MARVEL_URL</key>
+	<string>https://gateway.marvel.com:443/v1/public/</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES</key>
+	<true/>
+	<key>PRIVATE_KEY</key>
+	<string>942880c0318b3cf8cea2a4c8203c051e3e024147</string>
+	<key>PUBLIC_KEY</key>
+	<string>ab204a40de52dc326a6a493df4878a72</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
