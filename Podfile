@@ -1,12 +1,11 @@
 # Uncomment the next line to define a global platform for your project
-#platform :ios, '9.0'
-#use_frameworks!
-use_modular_headers!
+platform :ios, '9.0'
+use_frameworks!
 
 def common_pods
   pod 'Alamofire', '~> 4.3'
   pod 'ObjectMapper', '3.4.2'
-  pod 'Kingfisher', '~> 3.0'
+  pod 'Kingfisher', '~> 4.0'
 end
 
 target 'code hero' do
