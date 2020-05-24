@@ -20,14 +20,21 @@ class MainCoordinator: Coordinator {
     func start() {
         let vc = VCHeroes.instantiate()
         vc.coordinator = self
+        vc.requestHandler = MainRequestHandler()
         navigationController.pushViewController(vc, animated: false)
     }
     
-//    func goToHero(hero: Hero){
-//        let vc = VCHero.instantiate()
-//        vc.hero = hero
-//        vc.coordinator = self
-//        navigationController.pushViewController(vc, animated: true)
-//    }
+    func goToHeroSearch(_ initialData: [Hero]){
+        let vc = VCSearch.instantiate()
+        vc.coordinator = self
+        vc.heroes = initialData
+        vc.requestHandler = SearchRequestHandler()
+        navigationController.viewControllers[0].present(vc, animated: true, completion: {})
+    }
+    
+    func goToWHOWebsite(){
+        UIApplication.shared.open(URL(string: "https://www.who.int/health-topics/coronavirus")!, options: [:]) { _ in }
+    }
+    
 
 }

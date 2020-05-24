@@ -9,26 +9,22 @@
 import UIKit
 import Kingfisher
 
-class HeroCell: UITableViewCell {
+class HeroCell: UICollectionViewCell {
     
     @IBOutlet weak var heroThumbnail: UIImageView!
     @IBOutlet weak var lblHeroName: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.roundCorners(corners: [.allCorners], radius: 20.0)
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
-    }
     
     func setup(hero: Hero?){
         self.heroThumbnail.kf.setImage(with: URL.init(string: hero?.thumbnail?.image() ?? "loading"), placeholder: UIImage.init(named: "loading"), options: [.forceRefresh], progressBlock: nil, completionHandler: nil)
         lblHeroName.text = hero?.name
         self.heroThumbnail.clipsToBounds = true
-        self.heroThumbnail.layer.cornerRadius = self.heroThumbnail.frame.height/2
+        self.heroThumbnail.roundCorners(corners: [ .allCorners], radius: 15.0)
     }
 
 }

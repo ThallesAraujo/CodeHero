@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		21ABDBF319BE93D6DF4DA5F8 /* Pods_code_hero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941BB79B9C5756CCE5B6F602 /* Pods_code_hero.framework */; };
+		6F16F2312471A8210022731F /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F16F2302471A8210022731F /* GradientView.swift */; };
+		6F16F2332471B3250022731F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F16F2322471B3250022731F /* UIViewExtension.swift */; };
 		6F407C9623F5B7A300569D8F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F407C9523F5B7A300569D8F /* UIColorExtension.swift */; };
 		6F5F710F23F3269B00FF9B2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5F710E23F3269B00FF9B2C /* AppDelegate.swift */; };
 		6F5F711423F3269B00FF9B2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F5F711223F3269B00FF9B2C /* Main.storyboard */; };
@@ -18,6 +20,9 @@
 		6F5F712C23F327F000FF9B2C /* ConfigScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5F712923F327F000FF9B2C /* ConfigScheme.swift */; };
 		6F5F712E23F3281900FF9B2C /* HeroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5F712D23F3281900FF9B2C /* HeroService.swift */; };
 		6F5F713223F3284F00FF9B2C /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5F713023F3284F00FF9B2C /* MainCoordinator.swift */; };
+		6F7C801924799B2E00C658D0 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7C801824799B2E00C658D0 /* CustomButton.swift */; };
+		6F7C801B2479B92A00C658D0 /* HeroSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7C801A2479B92A00C658D0 /* HeroSearchCell.swift */; };
+		6F7C801D2479BA2D00C658D0 /* VCSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7C801C2479BA2D00C658D0 /* VCSearch.swift */; };
 		6F8A296923F45A03006FD8C0 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A296823F45A03006FD8C0 /* Hero.swift */; };
 		6F8A296B23F45A0E006FD8C0 /* Thumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A296A23F45A0E006FD8C0 /* Thumbnail.swift */; };
 		6F8A296D23F45DEE006FD8C0 /* VCHeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A296C23F45DEE006FD8C0 /* VCHeroes.swift */; };
@@ -26,10 +31,34 @@
 		6F8A297923F47521006FD8C0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A297723F47521006FD8C0 /* Coordinator.swift */; };
 		6F8A297A23F47521006FD8C0 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A297823F47521006FD8C0 /* Storyboarded.swift */; };
 		6F8A297C23F48300006FD8C0 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A297B23F48300006FD8C0 /* StringExtension.swift */; };
+		6F9181492471A41600761DA4 /* Jost-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F9181372471A41400761DA4 /* Jost-ExtraLight.ttf */; };
+		6F91814A2471A41600761DA4 /* Jost-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F9181382471A41400761DA4 /* Jost-Medium.ttf */; };
+		6F91814B2471A41600761DA4 /* Jost-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F9181392471A41400761DA4 /* Jost-Italic.ttf */; };
+		6F91814C2471A41600761DA4 /* Jost-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F91813A2471A41400761DA4 /* Jost-ExtraLightItalic.ttf */; };
+		6F91814D2471A41600761DA4 /* Jost-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F91813B2471A41400761DA4 /* Jost-Light.ttf */; };
+		6F91814E2471A41600761DA4 /* Jost-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F91813C2471A41400761DA4 /* Jost-ThinItalic.ttf */; };
+		6F91814F2471A41600761DA4 /* Jost-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F91813D2471A41400761DA4 /* Jost-ExtraBold.ttf */; };
+		6F9181502471A41600761DA4 /* Jost-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F91813E2471A41500761DA4 /* Jost-ExtraBoldItalic.ttf */; };
+		6F9181512471A41600761DA4 /* Jost-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F91813F2471A41500761DA4 /* Jost-SemiBold.ttf */; };
+		6F9181522471A41600761DA4 /* Jost-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F9181402471A41500761DA4 /* Jost-BoldItalic.ttf */; };
+		6F9181532471A41600761DA4 /* Jost-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F9181412471A41500761DA4 /* Jost-BlackItalic.ttf */; };
+		6F9181542471A41600761DA4 /* Jost-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F9181422471A41500761DA4 /* Jost-Regular.ttf */; };
+		6F9181552471A41600761DA4 /* Jost-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F9181432471A41500761DA4 /* Jost-Black.ttf */; };
+		6F9181562471A41600761DA4 /* Jost-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F9181442471A41500761DA4 /* Jost-Thin.ttf */; };
+		6F9181572471A41600761DA4 /* Jost-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F9181452471A41500761DA4 /* Jost-SemiBoldItalic.ttf */; };
+		6F9181582471A41600761DA4 /* Jost-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F9181462471A41500761DA4 /* Jost-MediumItalic.ttf */; };
+		6F9181592471A41600761DA4 /* Jost-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F9181472471A41600761DA4 /* Jost-LightItalic.ttf */; };
+		6F91815A2471A41600761DA4 /* Jost-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F9181482471A41600761DA4 /* Jost-Bold.ttf */; };
+		6F91815C2471A51E00761DA4 /* ColorsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F91815B2471A51E00761DA4 /* ColorsHelper.swift */; };
+		6FFB2210247AE93700681C7A /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFB220F247AE93700681C7A /* RequestHandler.swift */; };
+		6FFB2213247AEA1900681C7A /* MainRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFB2212247AEA1900681C7A /* MainRequestHandler.swift */; };
+		6FFB2215247AEB3300681C7A /* SearchRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FFB2214247AEB3300681C7A /* SearchRequestHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		622D06185F4FEFD22A3D6927 /* Pods-code hero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-code hero.release.xcconfig"; path = "Target Support Files/Pods-code hero/Pods-code hero.release.xcconfig"; sourceTree = "<group>"; };
+		6F16F2302471A8210022731F /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		6F16F2322471B3250022731F /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		6F407C9523F5B7A300569D8F /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		6F5F710B23F3269B00FF9B2C /* code hero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "code hero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F5F710E23F3269B00FF9B2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +71,9 @@
 		6F5F712923F327F000FF9B2C /* ConfigScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigScheme.swift; sourceTree = "<group>"; };
 		6F5F712D23F3281900FF9B2C /* HeroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroService.swift; sourceTree = "<group>"; };
 		6F5F713023F3284F00FF9B2C /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		6F7C801824799B2E00C658D0 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		6F7C801A2479B92A00C658D0 /* HeroSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroSearchCell.swift; sourceTree = "<group>"; };
+		6F7C801C2479BA2D00C658D0 /* VCSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCSearch.swift; sourceTree = "<group>"; };
 		6F8A296823F45A03006FD8C0 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		6F8A296A23F45A0E006FD8C0 /* Thumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thumbnail.swift; sourceTree = "<group>"; };
 		6F8A296C23F45DEE006FD8C0 /* VCHeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCHeroes.swift; sourceTree = "<group>"; };
@@ -50,6 +82,28 @@
 		6F8A297723F47521006FD8C0 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		6F8A297823F47521006FD8C0 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		6F8A297B23F48300006FD8C0 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		6F9181372471A41400761DA4 /* Jost-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ExtraLight.ttf"; sourceTree = "<group>"; };
+		6F9181382471A41400761DA4 /* Jost-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Medium.ttf"; sourceTree = "<group>"; };
+		6F9181392471A41400761DA4 /* Jost-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Italic.ttf"; sourceTree = "<group>"; };
+		6F91813A2471A41400761DA4 /* Jost-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		6F91813B2471A41400761DA4 /* Jost-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Light.ttf"; sourceTree = "<group>"; };
+		6F91813C2471A41400761DA4 /* Jost-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ThinItalic.ttf"; sourceTree = "<group>"; };
+		6F91813D2471A41400761DA4 /* Jost-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ExtraBold.ttf"; sourceTree = "<group>"; };
+		6F91813E2471A41500761DA4 /* Jost-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		6F91813F2471A41500761DA4 /* Jost-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-SemiBold.ttf"; sourceTree = "<group>"; };
+		6F9181402471A41500761DA4 /* Jost-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-BoldItalic.ttf"; sourceTree = "<group>"; };
+		6F9181412471A41500761DA4 /* Jost-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-BlackItalic.ttf"; sourceTree = "<group>"; };
+		6F9181422471A41500761DA4 /* Jost-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Regular.ttf"; sourceTree = "<group>"; };
+		6F9181432471A41500761DA4 /* Jost-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Black.ttf"; sourceTree = "<group>"; };
+		6F9181442471A41500761DA4 /* Jost-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Thin.ttf"; sourceTree = "<group>"; };
+		6F9181452471A41500761DA4 /* Jost-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		6F9181462471A41500761DA4 /* Jost-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-MediumItalic.ttf"; sourceTree = "<group>"; };
+		6F9181472471A41600761DA4 /* Jost-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-LightItalic.ttf"; sourceTree = "<group>"; };
+		6F9181482471A41600761DA4 /* Jost-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Bold.ttf"; sourceTree = "<group>"; };
+		6F91815B2471A51E00761DA4 /* ColorsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsHelper.swift; sourceTree = "<group>"; };
+		6FFB220F247AE93700681C7A /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		6FFB2212247AEA1900681C7A /* MainRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRequestHandler.swift; sourceTree = "<group>"; };
+		6FFB2214247AEB3300681C7A /* SearchRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequestHandler.swift; sourceTree = "<group>"; };
 		799A6C6499232BC896704331 /* Pods-code hero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-code hero.debug.xcconfig"; path = "Target Support Files/Pods-code hero/Pods-code hero.debug.xcconfig"; sourceTree = "<group>"; };
 		941BB79B9C5756CCE5B6F602 /* Pods_code_hero.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_code_hero.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -87,6 +141,8 @@
 		6F5F710D23F3269B00FF9B2C /* code hero */ = {
 			isa = PBXGroup;
 			children = (
+				6FFB220C247AE8E600681C7A /* RequestHandlers */,
+				6F9181362471A3F200761DA4 /* Fonts */,
 				6F8A297223F47136006FD8C0 /* Components */,
 				6F5F712623F327AE00FF9B2C /* Cells */,
 				6F5F712523F3278A00FF9B2C /* Extensions */,
@@ -108,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				6F8A296C23F45DEE006FD8C0 /* VCHeroes.swift */,
+				6F7C801C2479BA2D00C658D0 /* VCSearch.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -135,6 +192,7 @@
 				6F5F712723F327F000FF9B2C /* APIHelper.swift */,
 				6F5F712923F327F000FF9B2C /* ConfigScheme.swift */,
 				6F5F712823F327F000FF9B2C /* Network.swift */,
+				6F91815B2471A51E00761DA4 /* ColorsHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -153,6 +211,7 @@
 			children = (
 				6F8A297B23F48300006FD8C0 /* StringExtension.swift */,
 				6F407C9523F5B7A300569D8F /* UIColorExtension.swift */,
+				6F16F2322471B3250022731F /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -161,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				6F8A297023F46FCC006FD8C0 /* HeroCell.swift */,
+				6F7C801A2479B92A00C658D0 /* HeroSearchCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -169,6 +229,8 @@
 			isa = PBXGroup;
 			children = (
 				6F8A297323F47157006FD8C0 /* PageIndicator.swift */,
+				6F16F2302471A8210022731F /* GradientView.swift */,
+				6F7C801824799B2E00C658D0 /* CustomButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -178,6 +240,49 @@
 			children = (
 				6F8A297723F47521006FD8C0 /* Coordinator.swift */,
 				6F8A297823F47521006FD8C0 /* Storyboarded.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6F9181362471A3F200761DA4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6F9181432471A41500761DA4 /* Jost-Black.ttf */,
+				6F9181412471A41500761DA4 /* Jost-BlackItalic.ttf */,
+				6F9181482471A41600761DA4 /* Jost-Bold.ttf */,
+				6F9181402471A41500761DA4 /* Jost-BoldItalic.ttf */,
+				6F91813D2471A41400761DA4 /* Jost-ExtraBold.ttf */,
+				6F91813E2471A41500761DA4 /* Jost-ExtraBoldItalic.ttf */,
+				6F9181372471A41400761DA4 /* Jost-ExtraLight.ttf */,
+				6F91813A2471A41400761DA4 /* Jost-ExtraLightItalic.ttf */,
+				6F9181392471A41400761DA4 /* Jost-Italic.ttf */,
+				6F91813B2471A41400761DA4 /* Jost-Light.ttf */,
+				6F9181472471A41600761DA4 /* Jost-LightItalic.ttf */,
+				6F9181382471A41400761DA4 /* Jost-Medium.ttf */,
+				6F9181462471A41500761DA4 /* Jost-MediumItalic.ttf */,
+				6F9181422471A41500761DA4 /* Jost-Regular.ttf */,
+				6F91813F2471A41500761DA4 /* Jost-SemiBold.ttf */,
+				6F9181452471A41500761DA4 /* Jost-SemiBoldItalic.ttf */,
+				6F9181442471A41500761DA4 /* Jost-Thin.ttf */,
+				6F91813C2471A41400761DA4 /* Jost-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		6FFB220C247AE8E600681C7A /* RequestHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				6FFB2211247AE93B00681C7A /* Protocols */,
+				6FFB2212247AEA1900681C7A /* MainRequestHandler.swift */,
+				6FFB2214247AEB3300681C7A /* SearchRequestHandler.swift */,
+			);
+			path = RequestHandlers;
+			sourceTree = "<group>";
+		};
+		6FFB2211247AE93B00681C7A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6FFB220F247AE93700681C7A /* RequestHandler.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -259,9 +364,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F91815A2471A41600761DA4 /* Jost-Bold.ttf in Resources */,
+				6F9181502471A41600761DA4 /* Jost-ExtraBoldItalic.ttf in Resources */,
+				6F91814B2471A41600761DA4 /* Jost-Italic.ttf in Resources */,
+				6F9181532471A41600761DA4 /* Jost-BlackItalic.ttf in Resources */,
+				6F9181592471A41600761DA4 /* Jost-LightItalic.ttf in Resources */,
+				6F9181492471A41600761DA4 /* Jost-ExtraLight.ttf in Resources */,
+				6F9181552471A41600761DA4 /* Jost-Black.ttf in Resources */,
+				6F91814C2471A41600761DA4 /* Jost-ExtraLightItalic.ttf in Resources */,
 				6F5F711923F3269B00FF9B2C /* LaunchScreen.storyboard in Resources */,
+				6F9181582471A41600761DA4 /* Jost-MediumItalic.ttf in Resources */,
+				6F9181522471A41600761DA4 /* Jost-BoldItalic.ttf in Resources */,
+				6F9181512471A41600761DA4 /* Jost-SemiBold.ttf in Resources */,
+				6F9181572471A41600761DA4 /* Jost-SemiBoldItalic.ttf in Resources */,
 				6F5F711623F3269B00FF9B2C /* Assets.xcassets in Resources */,
+				6F91814A2471A41600761DA4 /* Jost-Medium.ttf in Resources */,
+				6F91814F2471A41600761DA4 /* Jost-ExtraBold.ttf in Resources */,
 				6F5F711423F3269B00FF9B2C /* Main.storyboard in Resources */,
+				6F91814E2471A41600761DA4 /* Jost-ThinItalic.ttf in Resources */,
+				6F9181562471A41600761DA4 /* Jost-Thin.ttf in Resources */,
+				6F91814D2471A41600761DA4 /* Jost-Light.ttf in Resources */,
+				6F9181542471A41600761DA4 /* Jost-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,10 +438,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F8A296D23F45DEE006FD8C0 /* VCHeroes.swift in Sources */,
+				6F7C801924799B2E00C658D0 /* CustomButton.swift in Sources */,
 				6F5F712C23F327F000FF9B2C /* ConfigScheme.swift in Sources */,
 				6F407C9623F5B7A300569D8F /* UIColorExtension.swift in Sources */,
 				6F5F713223F3284F00FF9B2C /* MainCoordinator.swift in Sources */,
+				6FFB2210247AE93700681C7A /* RequestHandler.swift in Sources */,
 				6F8A297123F46FCC006FD8C0 /* HeroCell.swift in Sources */,
+				6F16F2312471A8210022731F /* GradientView.swift in Sources */,
+				6F7C801B2479B92A00C658D0 /* HeroSearchCell.swift in Sources */,
+				6F16F2332471B3250022731F /* UIViewExtension.swift in Sources */,
+				6FFB2215247AEB3300681C7A /* SearchRequestHandler.swift in Sources */,
+				6FFB2213247AEA1900681C7A /* MainRequestHandler.swift in Sources */,
 				6F8A297423F47157006FD8C0 /* PageIndicator.swift in Sources */,
 				6F8A297A23F47521006FD8C0 /* Storyboarded.swift in Sources */,
 				6F8A296923F45A03006FD8C0 /* Hero.swift in Sources */,
@@ -328,7 +458,9 @@
 				6F8A297923F47521006FD8C0 /* Coordinator.swift in Sources */,
 				6F5F710F23F3269B00FF9B2C /* AppDelegate.swift in Sources */,
 				6F5F712B23F327F000FF9B2C /* Network.swift in Sources */,
+				6F7C801D2479BA2D00C658D0 /* VCSearch.swift in Sources */,
 				6F8A296B23F45A0E006FD8C0 /* Thumbnail.swift in Sources */,
+				6F91815C2471A51E00761DA4 /* ColorsHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
